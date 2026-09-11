@@ -2,10 +2,7 @@
   "challenge_module": "Challenge",
   "solution_module": "Solution",
   "theorem_names": [
-    "HorizonEinsteinClosure.geometricHodgeGeneration",
-    "HorizonEinsteinClosure.orthogonalNullFamily",
-    "HorizonEinsteinClosure.finiteCutOpticalBalance",
-    "HorizonEinsteinClosure.twoSidedTraceFreePreservation"
+    "HorizonEinsteinClosure.geometricHodgeGeneration"
   ],
   "definition_names": [],
   "permitted_axioms": [

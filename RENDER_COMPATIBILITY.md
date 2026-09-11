@@ -14,11 +14,13 @@ complete proposition definition verbatim. The script
 copy, compiled definition and corresponding Challenge/Solution definition.
 The geometric/operator definitions are ordinary checked dependencies.
 
-This revision changes the mathematics and selected result set. It does not
-claim equivalence to the previous seven theorem types. Earlier verification
-receipts apply only to their original commits. The new source requires fresh
-Lean, declaration-closure, axiom and renderer checks, followed by Palomar's
-own mechanical and editorial review.
+The current comparison selects one generation-and-rigidity theorem. Its
+quantified proposition and proof are preserved from commit 919c3e5; the optical
+and two-sided companion selections have been removed. Their substantive
+proof modules remain in the supporting library. Earlier verification receipts
+apply to their original commits. The narrowed intake requires fresh build,
+statement, axiom and rendering checks, followed by Palomar's own mechanical
+and editorial review.
 
 ```sh
 lake build

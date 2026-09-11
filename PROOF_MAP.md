@@ -1,8 +1,9 @@
 # Proof map for the revised comparison
 
-The principal result begins with geometric generators, proves their full
-Lie closure, and forces generator-covariant linear responses on that algebra
-to be scalar. The companion statements repair or constrain the interpretation.
+The single selected result begins with geometric generators, proves their
+full Lie closure, and forces generator-covariant linear responses on that
+algebra to be scalar. The other modules listed below retain the broader
+supporting development.
 
 | Source module | Verified role |
 |---|---|
@@ -19,9 +20,10 @@ to be scalar. The companion statements repair or constrain the interpretation.
 | `GravityScreening.PdtOpticalRepair` | Actual affine and label derivatives, nullness and screen orthogonality, positive pullback pairing, intrinsic metric evolution, full finite-cut energy balance. |
 | `GravityScreening.TwoSidedTraceFree` | Necessary and sufficient scalar-product condition for a two-sided response; explicit diagonal-difference obstruction witnesses. |
 
-`Solution.lean` connects the four displayed Challenge statements to their
-proof dependencies. The current selected names are given by `comparator.json`;
-the root library also exports supporting results beyond these selections.
+`Solution.lean` connects the one displayed Challenge statement,
+`HorizonEinsteinClosure.geometricHodgeGeneration`, to its proof dependencies.
+The root library also exports the optical and two-sided preservation proofs;
+those results are not selected claims of the current comparison.
 
 The older PDT modules retain the root arithmetic, KMS selection premises,
 Hodge pair, doubled quadratic action, Gaussian integrals and conditional

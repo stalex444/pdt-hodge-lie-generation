@@ -1,19 +1,17 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/v0.4.schema.json
 version: v0.4
 project:
-  name: Hodge-generated response algebras and finite-cut optical balance
-  description: The principal result proves that the fifteen adjoint basis actions of the orthogonal
-    algebra for diag(1,1,1,-1,1,-1), together with the Hodge operation on the oriented four-plane 0123
-    extended by zero, generate every trace-free 15-by-15 matrix. The theorem holds over every field
-    with two nonzero and derives the dimension 224 from that closure. An integral finite certificate
-    is combined with a general matrix-unit propagation proof and geometric definitions calculated
-    from 6-by-6 brackets. Its response-rigidity clause further proves that covariance under the
-    same sixteen generators forces a scalar endomorphism on the 224-dimensional algebra, with
-    determinant c^224. No simplicity or algebraic-closure hypothesis is needed. Companion results establish an orthogonal affine null family from a quadratic
-    initial cut, exact finite-cut optical energy balance with endpoint expansion, and the necessary
-    and sufficient scalar-product condition for a two-sided response to preserve trace zero. The
-    selected contribution is a constructive Lie-generation theorem; physical operator selection,
-    the scalar response magnitude, entropy coefficient and Newton coupling remain separate questions.
+  name: Local Hodge generation of sl(15) and scalar response rigidity
+  description: An explicit local Hodge operator on the oriented coordinate four-plane 0123, extended
+    by zero, together with the fifteen adjoint basis actions of the orthogonal algebra for diag(1,1,1,-1,1,-1),
+    generates sl(15,K) over every field of characteristic different from two. A finite integral commutator
+    certificate produces signed skew matrix units and one symmetric seed; a general propagation lemma
+    then produces all trace-free matrices. Dimension 224 follows from generation. As a consequence,
+    an endomorphism of this algebra commuting with the commutator actions of the same sixteen generators
+    is scalar, with determinant c^224. The proof includes characteristics three and five without
+    a simplicity assumption. The contribution is this constructive generation-and-rigidity theorem.
+    PDT motivates the chosen operators; assigning a physical response magnitude or gravitational
+    coupling is outside the selected claim.
   authors:
   - Stephanie Alexander
   license: MIT
@@ -24,18 +22,15 @@ repository:
 classification:
   arxiv:
   - math.RT
-  - math-ph
-  - gr-qc
   msc2020:
   - 17B05
   - 17B10
-  - 83C05
   - 68V20
 sources:
 - title: Constructive Lie generation from an orthogonal adjoint action and a local Hodge operator
   authors:
   - Stephanie Alexander
-  type: research note
+  type: other
   location: LIE_GENERATION.md
   relationship: formalizes
   author_endorsement: participated
@@ -46,82 +41,80 @@ sources:
   authors:
   - Skip Garibaldi
   - Robert M. Guralnick
-  type: article
+  type: paper
   location: https://arxiv.org/abs/1309.6611
   relationship: background
   author_endorsement: not-contacted
-  note: Representation-theoretic context for irreducible overgroups and invariant tensors. Not
-    claimed to prove the displayed local-Hodge generation theorem.
+  note: Representation-theoretic context for irreducible overgroups and invariant tensors. Not claimed
+    to prove the displayed local-Hodge generation theorem.
 - title: Controllability properties for finite dimensional quantum Markovian master equations
   authors:
   - Claudio Altafini
-  type: article
+  type: paper
   location: https://arxiv.org/abs/quant-ph/0211194
   relationship: background
   author_endorsement: not-contacted
-  note: Context for Lie generation from adjoint controls and an additional superoperator. Its
-    dissipative and control hypotheses are not transferred to this noncompact algebraic model.
+  note: Context for Lie generation from adjoint controls and an additional superoperator. Its dissipative
+    and control hypotheses are not transferred to this noncompact algebraic model.
 - title: Higgs bundles and exceptional isogenies
   authors:
   - Steven B. Bradlow
   - Laura P. Schaposnik
-  type: article
+  type: paper
   location: https://arxiv.org/abs/1508.02650
   relationship: background
   author_endorsement: not-contacted
-  note: Exceptional orthogonal/exterior-power geometry. Not a claimed duplicate or proof of the
-    present fixed four-plane Hodge result.
+  note: Exceptional orthogonal/exterior-power geometry. Not a claimed duplicate or proof of the present
+    fixed four-plane Hodge result.
 - title: 'Physical response: established structure and remaining implications'
   authors:
   - Stephanie Alexander
-  type: research note
+  type: other
   location: PHYSICAL_SCOPE.md
-  relationship: formalizes
+  relationship: other
   author_endorsement: participated
-  note: States the exact two-sided trace-preservation criterion, the obstruction to naive Hodge
-    extension, the repaired optical interpretation, existing uniqueness and normalization results, and an
-    optional additional microscopic effective-action calculation.
-    The induced-gravity discussion is literature analysis, not a new physical derivation.
+  note: Documents supporting physical interpretations and limitations. Its optical and two-sided
+    response results are not selected contributions of the present note.
 - title: 'Deriving Gravity from First Principles: The Dimensional Origin of Newton''s Constant'
   authors:
   - Stephanie Alexander
   id: DOI:10.5281/zenodo.20417378
-  type: article
+  type: paper
   location: https://doi.org/10.5281/zenodo.20417378
   relationship: background
   author_endorsement: participated
-  note: Origin of the PDT proposal and numerical coupling comparison. The generator choice is
-    motivated by this program. The selected theorem proves its specified Lie closure; it does
-    not assign the scalar response value or establish the empirical gravitational identification.
+  note: Origin of the PDT proposal and numerical coupling comparison. The generator choice is motivated
+    by this program. The selected theorem proves its specified Lie closure; it does not assign the
+    scalar response value or establish the empirical gravitational identification.
 - title: 'Thermodynamics of Spacetime: The Einstein Equation of State'
   authors:
   - Ted Jacobson
   id: DOI:10.1103/PhysRevLett.75.1260
-  type: article
+  type: paper
   location: https://arxiv.org/abs/gr-qc/9504004
   relationship: background
   author_endorsement: not-contacted
-  note: Context for the previously formalized conditional local Clausius-to-Einstein step. The
-    present selected results do not derive the microscopic area-entropy coefficient or the local
-    thermodynamic premise.
+  note: Context for the previously formalized conditional local Clausius-to-Einstein step. The present
+    selected results do not derive the microscopic area-entropy coefficient or the local thermodynamic
+    premise.
 - title: Gravitational algebras and the generalized second law
   authors:
   - Thomas Faulkner
   - Antony J. Speranza
-  type: article
+  type: paper
   location: https://arxiv.org/abs/2405.00847
   relationship: adapts
   author_endorsement: not-contacted
-  note: Source for the full nonlinear shear-minus-expansion null-energy density and finite-cut
-    charge, especially equations 3.27 and3.31. The companion formalization derives the corresponding
-    scalar interval identity from explicitly assumed optical equations. A physical modular-Hamiltonian
-    identification, gravitational constraints and future stationarity remain additional inputs.
+  note: Source for the full nonlinear shear-minus-expansion null-energy density and finite-cut charge,
+    especially equations 3.27 and3.31. The companion formalization derives the corresponding scalar
+    interval identity from explicitly assumed optical equations. A physical modular-Hamiltonian identification,
+    gravitational constraints and future stationarity remain additional inputs. This adaptation is
+    retained in the supporting library, outside the selected claim.
 related_formalizations:
 - id: PALOMAR-2026-08-19-000007
   relationship: builds-on
-  note: The registered selected surface contains CHSH/Tsirelson results; the broader PDT Lean
-    repository contains the cubic/quartic kinematic setting. This entry does not resubmit those
-    registered declarations.
+  note: The registered selected surface contains CHSH/Tsirelson results; the broader PDT Lean repository
+    contains the cubic/quartic kinematic setting. This entry does not resubmit those registered declarations.
 - id: PALOMAR-2026-08-31-000004
   relationship: other
   note: Registered degree-two through degree-four Mahler-measure minima, including the distinguished
@@ -146,23 +139,16 @@ related_formalizations:
     of the compared gravity declarations.
 - id: https://github.com/stalex444/gravity-screening-mechanism/tree/4ad8be8c95f3170d77e4675294df79a5d53a976b
   relationship: builds-on
-  note: Pinned source of the original supporting PDT development closure. The present revision
-    adds constructive local-Hodge Lie generation and optical/response corrections; the earlier
-    conditional capstone remains supporting material.
+  note: Pinned source of the original supporting PDT development closure. The present revision adds
+    constructive local-Hodge Lie generation and optical/response corrections; the earlier conditional
+    capstone remains supporting material.
 status:
-  scope: The selected mathematical response algebra is generated by explicitly specified operators;
-    its dimension 224 is a conclusion. The field hypothesis is only2!=0, including odd positive
-    characteristics. The local Hodge operator squares to minus its rank-six projector, not minus
-    the identity on all fifteen coordinates. The optical companion uses actual coordinate derivatives
-    and retains finite endpoint charges. The two-sided response criterion is valid over any commutative
-    ring with a finite nonempty index set. These results do not determine the physical operator
-    selection, an extension of the original complex 2D Hodge divide, the response magnitude, a
-    quantum state, a microscopic entropy coefficient or Newton's constant. Existing doubled quadratic
-    action and fixed-mode Gaussian results remain supporting development; a metric-dependent effective-action/stress-correlation
-    calculation would be needed for the separate induced-gravity derivation discussed in the note;
-    the existing PDT formula is already definite within its stated physical foundations. To identify an arbitrary
-    physical response algebra with this least generated space, minimality or trace-free containment
-    is an additional requirement; generator inclusion alone also permits larger algebras.
+  scope: One selected theorem proves the specified geometric Lie generation, its dimension, and the
+    resulting scalar-response rigidity over all fields with 2!=0. The quadratic form, oriented four-plane,
+    zero extension and least-closure operation are explicit data. No physical calibration of c is
+    inferred. Optical, thermodynamic-gravity and two-sided-response results remain in the supporting
+    source library and are not principal claims of this note. The broader PDT numerical formula is
+    documented in PHYSICAL_SCOPE.md and NEWTON_EXPRESSION.md within its stated physical foundations.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms: &id001
@@ -175,64 +161,41 @@ status:
     sorry_count: 0
     axioms: *id001
     comparator_config: comparator.json
-  - declaration: HorizonEinsteinClosure.orthogonalNullFamily
-    file: Solution.lean
-    sorry_count: 0
-    axioms: *id001
-    comparator_config: comparator.json
-  - declaration: HorizonEinsteinClosure.finiteCutOpticalBalance
-    file: Solution.lean
-    sorry_count: 0
-    axioms: *id001
-    comparator_config: comparator.json
-  - declaration: HorizonEinsteinClosure.twoSidedTraceFreePreservation
-    file: Solution.lean
-    sorry_count: 0
-    axioms: *id001
-    comparator_config: comparator.json
 automation:
   methods:
   - method: agent
     models:
     - OpenAI GPT-family; exact model revision not recorded
     framework: Codex
-    tool_setup: Human-directed theorem selection, exact integer exploration, Lean4.31.0 kernel
-      proofs, geometric identification, independent mathematical/physics audits and primary-literature
-      scouting. Mathlib is pinned in lake-manifest.json. The finite certificate uses ordinary
-      matrix-unit simplification and kernel evaluation, without native_decide.
+    tool_setup: Human-directed theorem selection, exact integer exploration, Lean4.31.0 kernel proofs,
+      geometric identification, independent mathematical/physics audits and primary-literature scouting.
+      Mathlib is pinned in lake-manifest.json. The finite certificate uses ordinary matrix-unit simplification
+      and kernel evaluation, without native_decide.
     cost:
-      wall_time: Sessions through 2026-09-10; cumulative elapsed effort not tracked
+      wall_time: Sessions through 2026-09-11; cumulative elapsed effort not tracked
       spend_usd: not tracked
       hardware: local machine
-    prompting_notes: Stephanie Alexander directed substantive strengthening of the PDT gravity
-      work and requested an agent team. The team investigated generator-defined Lie closure, repaired
-      optical geometry and response-preservation conditions, and tested the proposed physical
-      links against primary literature. The selected result set now leads with the explicit Lie-generation
-      theorem. Physical gaps and conditional hypotheses remain visible.
+    prompting_notes: Stephanie Alexander directed development of the PDT gravity work. Earlier agents
+      constructed and audited the geometric Lie-generation proof, optical repairs and physical limitations.
+      This revision selects only the existing generation-and-rigidity theorem, preserving its quantified
+      statement and proof while aligning the Challenge, abstract and metadata with that scope.
   spend_usd: not tracked
-  notes: AI assistance and kernel verification are disclosed. They do not constitute human peer
-    review, independent experimental validation or a priority determination.
+  notes: AI assistance and kernel verification are disclosed. They do not constitute human peer review,
+    independent experimental validation or a priority determination.
 fidelity:
-  divergences: The principal statement uses fixed integral coordinates for an orthogonal adjoint
-    representation and a chosen local Hodge operator, extended to arbitrary fields with 2!=0. It
-    does not claim all signatures, all four-planes, or a classification of every possible response
-    algebra. An exact certificate is used to prove the closure; a general Lie-theoretic classification
-    is not imported. The optical theorems are flat-coordinate geometry and real-analysis consequences
-    of stated optical equations, not a global Lorentzian manifold or interacting quantum-horizon
-    construction. The two-sided trace-preservation theorem constrains possible response laws but
-    does not assert that the physical law is two-sided. The original 2D Hodge divide and the 224D linear response are distinguished explicitly. The
-    latter is now forced to be scalar under generator covariance; its physical scalar calibration
-    remains explicit. The intended research-interest case
-    concerns constructive/formalized representation theory; global novelty remains unestablished.
+  divergences: The theorem uses the fixed integral orthogonal/Hodge data displayed in Challenge.lean.
+    It asserts neither a classification of arbitrary Hodge extensions nor a physical selection principle
+    for the operators. The field hypothesis is exactly 2!=0, with no algebraic-closure or simplicity
+    hypothesis. The response magnitude c remains arbitrary. The source note gives the integral certificate,
+    general matrix-unit propagation and direct centroid argument; global novelty remains unestablished.
+    The supporting gravity and optical modules are outside this selected theorem.
 review:
   status: self-assessed
   reviewers: []
-  notes: Separate AI agents investigated exact finite identities, optical geometry and physics
-    scope, and primary-literature connections. The coordinator integrated the general field proof
-    and selected statements. The earlier dated PRE_SUBMISSION_REVIEW.md describes a historical
-    snapshot, not an independent review of this revision. Current local proof and presentation
-    checks must apply to the submitted commit; Palomar mechanical and editorial review are separate.
-    No acceptance or human peer-review claim is made.
+  notes: Earlier separate AI audits examined the mathematical proof and physical scope. This scope
+    revision preserves the main statement and proof; its coordinator checks the narrowed intake and
+    presentation separately. Historical audit receipts apply to their named commits. No human peer
+    review or Palomar acceptance is claimed.
 alignment:
   namespace: HorizonEinsteinClosure
   statements:
@@ -240,26 +203,8 @@ alignment:
     lean: HorizonEinsteinClosure.geometricHodgeGeneration
     module: Solution
     status: proved
-    note: Explicit six-dimensional brackets and local Hodge complement generate sl15 over every
-      field with two nonzero; dimension 224 follows, and covariance under those sixteen generators
-      forces R=cI with determinant c^224 on that algebra.
-  - source: Orthogonal affine null realization
-    lean: HorizonEinsteinClosure.orthogonalNullFamily
-    module: Solution
-    status: proved
-    note: Actual affine and screen-label derivatives are verified; the induced screen pairing
-      is positive under nonsingularity.
-  - source: Finite-cut optical energy balance
-    lean: HorizonEinsteinClosure.finiteCutOpticalBalance
-    module: Solution
-    status: proved
-    note: The full evolving shear-minus-expansion density integrates to the difference of finite
-      endpoint charges.
-  - source: Two-sided trace-free preservation
-    lean: HorizonEinsteinClosure.twoSidedTraceFreePreservation
-    module: Solution
-    status: proved
-    note: For finite nonempty matrices over a commutative ring, trace-zero preservation is equivalent
-      to the reversed factor product being scalar.
+    note: Explicit six-dimensional brackets and local Hodge complement generate sl15 over every field
+      with two nonzero; dimension 224 follows, and covariance under those sixteen generators forces
+      R=cI with determinant c^224 on that algebra.
 acknowledgements: Lean and Mathlib contributors; the authors of the cited horizon, thermodynamic-gravity,
   and operator-algebra literature; and the Palomar Registry maintainers.
