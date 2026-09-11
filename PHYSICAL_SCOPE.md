@@ -96,7 +96,7 @@ There is a broader sufficient construction. For invertible factors with
 `DE=rI`, the two-sided map is `T ↦ r D T D^-1`. Over characteristic zero,
 conjugation has determinant one on `sl15`, so this map has determinant
 `r^224` without being a scalar map itself. This determinant argument is
-ordinary mathematical reasoning in this note; the selected Lean theorem
+ordinary mathematical reasoning in this note; the supporting Lean theorem
 checks the trace-preservation criterion. An application must identify the
 physical factors and match their product to the PDT calibration `r=rho Q`
 on this response space.
