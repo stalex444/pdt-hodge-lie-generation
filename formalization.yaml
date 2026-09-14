@@ -25,7 +25,6 @@ classification:
   msc2020:
   - 17B05
   - 17B10
-  - 68V20
 sources:
 - title: Constructive Lie generation from an orthogonal adjoint action and a local Hodge operator
   authors:
