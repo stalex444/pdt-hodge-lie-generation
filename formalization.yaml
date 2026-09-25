@@ -29,13 +29,15 @@ sources:
 - title: Constructive Lie generation from an orthogonal adjoint action and a local Hodge operator
   authors:
   - Stephanie Alexander
-  type: other
+  type: original-proof
   location: LIE_GENERATION.md
-  relationship: formalizes
+  relationship: other
   author_endorsement: participated
-  note: Self-contained statement, constructive proof mechanism and bounded literature comparison
-    for the principal generation theorem. Global novelty and publication priority are not established
-    by this note.
+  note: The principal generation-and-rigidity theorem, HorizonEinsteinClosure.geometricHodgeGeneration,
+    was first presented in this Lean formalization development. LIE_GENERATION.md is its accompanying
+    exposition, developed alongside the formal proof; it is not a prior mathematical source being
+    formalized. The related repositories and earlier commits record the development lineage.
+    This origin declaration does not assert exhaustive literature novelty or publication priority.
 - title: Simple groups stabilizing polynomials
   authors:
   - Skip Garibaldi
@@ -65,6 +67,18 @@ sources:
   author_endorsement: not-contacted
   note: Exceptional orthogonal/exterior-power geometry. Not a claimed duplicate or proof of the present
     fixed four-plane Hodge result.
+- title: The centroid of extended affine and root graded Lie algebras
+  authors:
+  - Georgia Benkart
+  - Erhard Neher
+  type: paper
+  location: https://arxiv.org/abs/math/0502561
+  relationship: background
+  author_endorsement: not-contacted
+  note: Proposition 3.1(b), page 15, gives a general scalar-centroid criterion applicable to sl15,
+    including characteristics three and five. Added after proof development as a literature comparison
+    for the standard rigidity ingredient. This paper does not present the selected local-Hodge
+    generation theorem. See RESPONSE_UNIQUENESS.md for the hypothesis comparison.
 - title: 'Physical response: established structure and remaining implications'
   authors:
   - Stephanie Alexander
@@ -102,13 +116,14 @@ sources:
   - Antony J. Speranza
   type: paper
   location: https://arxiv.org/abs/2405.00847
-  relationship: adapts
+  relationship: background
   author_endorsement: not-contacted
-  note: Source for the full nonlinear shear-minus-expansion null-energy density and finite-cut charge,
-    especially equations 3.27 and3.31. The companion formalization derives the corresponding scalar
-    interval identity from explicitly assumed optical equations. A physical modular-Hamiltonian identification,
-    gravitational constraints and future stationarity remain additional inputs. This adaptation is
-    retained in the supporting library, outside the selected claim.
+  note: Background for the retained supporting optical library, which adapts the full nonlinear
+    shear-minus-expansion null-energy density and finite-cut charge, especially equations 3.27 and3.31.
+    The companion formalization derives the corresponding scalar interval identity from explicitly
+    assumed optical equations. A physical modular-Hamiltonian identification, gravitational constraints
+    and future stationarity remain additional inputs. These supporting results are outside the
+    selected generation-and-rigidity claim; this paper is not a prior source for that principal theorem.
 related_formalizations:
 - id: PALOMAR-2026-08-19-000007
   relationship: builds-on

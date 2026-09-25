@@ -87,6 +87,16 @@ result in an action or entropy calculation.
 
 ## Sources and verification
 
+For a general reference on the scalar-centroid ingredient, see Georgia Benkart
+and Erhard Neher, [*The centroid of extended affine and root graded Lie
+algebras* (2005), Proposition 3.1(b), p. 15](https://arxiv.org/pdf/math/0502561#page=15).
+With `L=sl(15,K)`, a one-dimensional off-diagonal weight space generates `L`
+as an ideal, so their criterion yields a scalar centroid. This application
+also covers characteristics three and five: their characteristic-zero
+restriction starts in section 3.2. This provides context for the standard
+rigidity step after covariance extends to the full algebra. The paper does
+not present the fixed local-Hodge generation calculation.
+
 - `GravityScreening/HodgeResponseCovariance.lean` proves propagation from
   the actual geometric generators to full adjoint covariance.
 - `GravityScreening/TraceFreeResponseUniqueness.lean` proves the direct
