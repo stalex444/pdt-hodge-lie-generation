@@ -108,7 +108,7 @@ def responseCommutator (K : Type) [Field K] (A : ResponseMatrix K) :
     apply Subtype.ext
     change A * (X.val + Y.val) - (X.val + Y.val) * A =
       (A * X.val - X.val * A) + (A * Y.val - Y.val * A)
-    noncomm_ring
+    rw [mul_add, add_mul, add_sub_add_comm]
   map_smul' c X := by
     apply Subtype.ext
     change A * (c • X.val) - (c • X.val) * A = c • (A * X.val - X.val * A)
