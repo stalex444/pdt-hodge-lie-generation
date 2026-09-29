@@ -1,4 +1,7 @@
-import GravityScreening.TimeDilation
+module
+public import GravityScreening.TimeDilation
+
+@[expose] public section
 
 /-!
 # The quantum free-fall gauge phase

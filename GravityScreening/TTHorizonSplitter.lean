@@ -1,5 +1,8 @@
-import GravityScreening.CoherentShearMatching
-import GravityScreening.ElectricSourceFrame
+module
+public import GravityScreening.CoherentShearMatching
+public import GravityScreening.ElectricSourceFrame
+
+@[expose] public section
 
 /-!
 # The quartic splitter on the physical TT polarization space

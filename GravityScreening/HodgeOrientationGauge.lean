@@ -1,4 +1,7 @@
-import GravityScreening.HodgeGaussianUniqueness
+module
+public import GravityScreening.HodgeGaussianUniqueness
+
+@[expose] public section
 
 /-!
 # Hodge orientation as a response-basis gauge

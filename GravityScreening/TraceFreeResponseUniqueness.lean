@@ -1,5 +1,8 @@
-import GravityScreening.SignedLieGeneration
-import Mathlib.LinearAlgebra.Determinant
+module
+public import GravityScreening.SignedLieGeneration
+public import Mathlib.LinearAlgebra.Determinant
+
+@[expose] public section
 
 /-! Scalar response rigidity on the actual special linear Lie algebra.
 The proof uses a rank-one double commutator and elementary matrix units;

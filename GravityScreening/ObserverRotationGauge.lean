@@ -1,5 +1,10 @@
-import GravityScreening.LorentzPauliFierzSymbol
-import Mathlib.LinearAlgebra.UnitaryGroup
+module
+public import GravityScreening.LorentzPauliFierzSymbol
+public import Mathlib.LinearAlgebra.UnitaryGroup
+
+@[expose] public section
+
+set_option backward.isDefEq.respectTransparency false
 
 /-!
 # The rotation gauge left by a classical rest observer

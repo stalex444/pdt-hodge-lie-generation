@@ -1,4 +1,7 @@
-import Mathlib
+module
+public import Mathlib
+
+@[expose] public section
 
 /-!
 # Local Hodge generation of sl(15) and scalar response rigidity

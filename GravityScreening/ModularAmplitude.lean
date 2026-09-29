@@ -1,4 +1,7 @@
-import GravityScreening.HorizonBranch
+module
+public import GravityScreening.HorizonBranch
+
+@[expose] public section
 
 /-!
 # The modular spectral-line origin of the quartic amplitude

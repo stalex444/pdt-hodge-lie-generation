@@ -1,6 +1,9 @@
-import GravityScreening.ModularAmplitude
-import GravityScreening.PerronTetrahedralBridge
-import Mathlib.LinearAlgebra.Matrix.Irreducible.Defs
+module
+public import GravityScreening.ModularAmplitude
+public import GravityScreening.PerronTetrahedralBridge
+public import Mathlib.LinearAlgebra.Matrix.Irreducible.Defs
+
+@[expose] public section
 
 /-!
 # Perron--Frobenius data for the quartic graph KMS scale

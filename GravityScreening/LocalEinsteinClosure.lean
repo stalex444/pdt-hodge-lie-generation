@@ -1,4 +1,7 @@
-import GravityScreening.KMSOpticalBoundarySelection
+module
+public import GravityScreening.KMSOpticalBoundarySelection
+
+@[expose] public section
 
 /-!
 # Local Jacobson-to-Einstein tensor closure

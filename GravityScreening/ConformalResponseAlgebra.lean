@@ -1,4 +1,7 @@
-import GravityScreening.ConformalGeneratorCount
+module
+public import GravityScreening.ConformalGeneratorCount
+
+@[expose] public section
 
 /-!
 # The trace-free response algebra on the conformal generator space
@@ -189,7 +192,8 @@ theorem conformalResponseAction_surjective
 theorem finrank_conformalResponseStabilizer
     {v : conformalGeneratorSpace} (hv : v ≠ 0) :
     finrank ℝ (conformalResponseStabilizer v) = 209 := by
-  have h := LinearMap.finrank_range_add_finrank_ker
+  have h := LinearMap.finrank_range_add_finrank_ker (K := ℝ)
+    (V := conformalResponseAlgebra) (V₂ := conformalGeneratorSpace)
     (conformalResponseAction v)
   rw [LinearMap.range_eq_top.mpr (conformalResponseAction_surjective hv),
     finrank_top, finrank_conformalLieAlgebra,

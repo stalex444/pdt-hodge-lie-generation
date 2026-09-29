@@ -1,4 +1,7 @@
-import GravityScreening.KillingRedshift
+module
+public import GravityScreening.KillingRedshift
+
+@[expose] public section
 
 /-!
 # Character pairing between observer time and the continuous-core dual action

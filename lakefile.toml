@@ -5,7 +5,7 @@ defaultTargets = ["PdtHorizonEinsteinClosure", "Challenge", "Solution"]
 [[require]]
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4.git"
-rev = "v4.31.0"
+rev = "065356127b1dc0016f66b7283ce0ce2c4055aa55"
 
 [[lean_lib]]
 name = "GravityScreening"

@@ -1,6 +1,9 @@
-import Mathlib
-import GravityScreening.HodgeLieGeneration
-import ResponseClosureGeometry
+module
+public import Mathlib
+public import GravityScreening.HodgeLieGeneration
+public import ResponseClosureGeometry
+
+@[expose] public section
 
 /-!
 # Transporting response covariance through geometric Lie generation

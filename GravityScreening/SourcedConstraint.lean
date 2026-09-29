@@ -1,4 +1,7 @@
-import GravityScreening.SymplecticReduction
+module
+public import GravityScreening.SymplecticReduction
+
+@[expose] public section
 
 /-!
 # Electric-source reduction of the doubled constraint block

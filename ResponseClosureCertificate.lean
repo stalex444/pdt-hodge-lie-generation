@@ -1,8 +1,11 @@
-import Mathlib.LinearAlgebra.Matrix.Notation
-import Mathlib.Data.Matrix.Basis
-import Mathlib.Tactic.FinCases
-import Mathlib.Tactic.Abel
-import Mathlib.LinearAlgebra.Matrix.Trace
+module
+public import Mathlib.LinearAlgebra.Matrix.Notation
+public import Mathlib.Data.Matrix.Basis
+public import Mathlib.Tactic.FinCases
+public import Mathlib.Tactic.Abel
+public import Mathlib.LinearAlgebra.Matrix.Trace
+
+@[expose] public section
 /-!
 # Exact structural certificate for adjoint-plus-local-Hodge generation
 

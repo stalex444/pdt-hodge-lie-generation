@@ -1,6 +1,9 @@
-import GravityScreening.UnifiedCouplingGrammar
-import GravityScreening.TransverseTracelessCount
-import GravityScreening.TTResponseUniqueness
+module
+public import GravityScreening.UnifiedCouplingGrammar
+public import GravityScreening.TransverseTracelessCount
+public import GravityScreening.TTResponseUniqueness
+
+@[expose] public section
 
 /-!
 # The pi-fourth gravity numerator as a two-polarization boundary determinant

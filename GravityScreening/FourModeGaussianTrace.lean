@@ -1,5 +1,8 @@
-import GravityScreening.ProjectiveModeShell
-import Mathlib.MeasureTheory.Integral.Gamma
+module
+public import GravityScreening.ProjectiveModeShell
+public import Mathlib.MeasureTheory.Integral.Gamma
+
+@[expose] public section
 
 /-!
 # Four-dimensional radial and Gaussian-trace normalization

@@ -1,4 +1,7 @@
-import GravityScreening.UnorientedClockGravity
+module
+public import GravityScreening.UnorientedClockGravity
+
+@[expose] public section
 
 /-!
 # Conditional bridge to surface-flux area kinematics

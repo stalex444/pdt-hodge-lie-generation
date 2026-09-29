@@ -1,6 +1,9 @@
-import GravityScreening.ClockHodgeBridge
-import GravityScreening.ClockForcesConstitutive
-import GravityScreening.DoubledSpinTwoOperator
+module
+public import GravityScreening.ClockHodgeBridge
+public import GravityScreening.ClockForcesConstitutive
+public import GravityScreening.DoubledSpinTwoOperator
+
+@[expose] public section
 
 /-!
 # From the quartic clock action to the screened spin-two equation

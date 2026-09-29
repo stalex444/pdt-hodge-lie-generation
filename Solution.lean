@@ -1,7 +1,10 @@
-import Mathlib
-import GravityScreening.HodgeLieGeneration
-import GravityScreening.GeometricResponseRigidity
-import ResponseClosureGeometry
+module
+public import Mathlib
+public import GravityScreening.HodgeLieGeneration
+public import GravityScreening.GeometricResponseRigidity
+public import ResponseClosureGeometry
+
+@[expose] public section
 
 /-!
 # Local Hodge generation of sl(15) and scalar response rigidity

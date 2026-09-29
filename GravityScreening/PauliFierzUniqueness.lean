@@ -1,4 +1,7 @@
-import GravityScreening.ElectricSourceFrame
+module
+public import GravityScreening.ElectricSourceFrame
+
+@[expose] public section
 
 /-!
 # Uniqueness of the flat massless spin-two normalization

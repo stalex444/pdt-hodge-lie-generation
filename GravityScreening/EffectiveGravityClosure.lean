@@ -1,4 +1,7 @@
-import GravityScreening.ClockHodgeBridge
+module
+public import GravityScreening.ClockHodgeBridge
+
+@[expose] public section
 
 /-!
 # Conditional closure of the effective spin-two normalization

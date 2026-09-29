@@ -1,4 +1,7 @@
-import GravityScreening.LorentzPauliFierzSymbol
+module
+public import GravityScreening.LorentzPauliFierzSymbol
+
+@[expose] public section
 
 /-!
 # Operator-level reduction of the doubled spin-two system

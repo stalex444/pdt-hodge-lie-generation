@@ -1,5 +1,8 @@
-import GravityScreening.ErasureDilation
-import GravityScreening.TTResponseUniqueness
+module
+public import GravityScreening.ErasureDilation
+public import GravityScreening.TTResponseUniqueness
+
+@[expose] public section
 
 /-!
 # The two-state erasure code is the TT exterior block

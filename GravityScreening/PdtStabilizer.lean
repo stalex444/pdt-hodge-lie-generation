@@ -1,3 +1,4 @@
+module
 /-
 PdtStabilizer.lean — THE STABILIZER IDENTITY (general N).
 
@@ -21,7 +22,9 @@ Concrete instantiations: N = 4 (dim 11), N = 5 (dim 19), N = 15 (dim 209).
 
 Pure mathematics; no physics claims. Zero sorries intended.
 -/
-import Mathlib
+public import Mathlib
+
+@[expose] public section
 
 open Module LinearMap
 open scoped Matrix

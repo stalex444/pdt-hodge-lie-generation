@@ -1,5 +1,8 @@
-import GravityScreening.LocalEinsteinClosure
-import GravityScreening.HodgeBulkScreen
+module
+public import GravityScreening.LocalEinsteinClosure
+public import GravityScreening.HodgeBulkScreen
+
+@[expose] public section
 
 /-!
 # Integrated horizon-to-Einstein capstone

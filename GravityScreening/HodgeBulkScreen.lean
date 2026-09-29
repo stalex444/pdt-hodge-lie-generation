@@ -1,4 +1,7 @@
-import GravityScreening.Basic
+module
+public import GravityScreening.Basic
+
+@[expose] public section
 
 /-!
 # Hodge bulk/screen factorization

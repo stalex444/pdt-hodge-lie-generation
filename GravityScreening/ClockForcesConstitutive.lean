@@ -1,4 +1,7 @@
-import GravityScreening.TransverseTracelessCount
+module
+public import GravityScreening.TransverseTracelessCount
+
+@[expose] public section
 
 /-!
 # The quartic clock weight uniquely fixes the exchange-symmetric constitutive block

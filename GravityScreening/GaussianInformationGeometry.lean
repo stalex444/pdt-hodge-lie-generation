@@ -1,5 +1,8 @@
-import GravityScreening.DoubledTTGaussian
-import GravityScreening.TetrahedralFisherCone
+module
+public import GravityScreening.DoubledTTGaussian
+public import GravityScreening.TetrahedralFisherCone
+
+@[expose] public section
 
 /-!
 # Information geometry of the doubled TT Gaussian

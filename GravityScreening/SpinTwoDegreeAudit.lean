@@ -1,4 +1,7 @@
-import GravityScreening.DoubledSpinTwoAction
+module
+public import GravityScreening.DoubledSpinTwoAction
+
+@[expose] public section
 
 /-!
 # Channel and degree audit for the doubled quadratic action

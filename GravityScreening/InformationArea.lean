@@ -1,4 +1,7 @@
-import GravityScreening.ConservedFlux
+module
+public import GravityScreening.ConservedFlux
+
+@[expose] public section
 
 /-!
 # Two-dimensional information area of the erasure channel

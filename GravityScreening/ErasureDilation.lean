@@ -1,4 +1,7 @@
-import GravityScreening.ErasureInformation
+module
+public import GravityScreening.ErasureInformation
+
+@[expose] public section
 
 /-!
 # A finite horizon-cell Stinespring dilation

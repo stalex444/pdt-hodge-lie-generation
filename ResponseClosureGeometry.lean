@@ -1,5 +1,10 @@
-import ResponseClosureCertificate
-import Mathlib.LinearAlgebra.Matrix.Trace
+module
+public import ResponseClosureCertificate
+public import Mathlib.LinearAlgebra.Matrix.Trace
+
+@[expose] public section
+
+set_option backward.isDefEq.respectTransparency false
 
 /-!
 # Geometric identification of the integral response generators

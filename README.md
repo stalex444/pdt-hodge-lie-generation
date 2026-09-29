@@ -68,7 +68,10 @@ lake build
 python3 scripts/check_render_statements.py
 ```
 
-Lean 4.31.0 and the Mathlib revision in `lake-manifest.json` are pinned.
+Lean 4.35.0-rc2 and the matching Mathlib revision in `lake-manifest.json` are pinned.
+All submitted Lean files use the module system. The September 29 compatibility
+port retains the selected theorem's definitions and statement, while adapting
+module visibility and supporting proofs to the new compiler and library.
 `Challenge.lean` imports only Mathlib and has complete ordinary definitions;
 `Solution.lean` proves the one selected statement from the source modules.
 The theorem statement definitions are fixed dependencies, and
@@ -84,6 +87,8 @@ calculations, Lean proofs, literature checks and integration under Stephanie
 Alexander's direction. Source relationships and limitations are recorded in
 [formalization.yaml](formalization.yaml) and [PROOF_MAP.md](PROOF_MAP.md).
 
-New public commits require their own Palomar verification and editorial
-review. Local proof checking does not establish acceptance or experimental
-validation.
+The `Palomar mechanical preflight` workflow runs the pinned official full
+verification pipeline against an explicitly supplied commit. Run it and inspect
+the mechanical report before submitting that commit. New public commits also
+require Palomar's rendering and editorial review. Local proof checking does
+not establish registration or experimental validation.

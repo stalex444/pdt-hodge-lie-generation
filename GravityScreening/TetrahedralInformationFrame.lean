@@ -1,4 +1,7 @@
-import GravityScreening.ThreeDPackingWitness
+module
+public import GravityScreening.ThreeDPackingWitness
+
+@[expose] public section
 
 /-!
 # The tetrahedral digits as an isotropic information frame

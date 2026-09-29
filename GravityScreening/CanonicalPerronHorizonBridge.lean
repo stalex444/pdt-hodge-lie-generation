@@ -1,5 +1,8 @@
-import GravityScreening.PerronHorizonCarrier
-import GravityScreening.RhoQModularCompletion
+module
+public import GravityScreening.PerronHorizonCarrier
+public import GravityScreening.RhoQModularCompletion
+
+@[expose] public section
 
 /-!
 # Canonical finite Perron-to-horizon bridge

@@ -1,4 +1,7 @@
-import GravityScreening.ModularAmplitude
+module
+public import GravityScreening.ModularAmplitude
+
+@[expose] public section
 
 /-!
 # Information geometry of the quartic erasure channel

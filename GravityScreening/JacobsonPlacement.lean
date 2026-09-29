@@ -1,4 +1,7 @@
-import GravityScreening.ErasureCovariance
+module
+public import GravityScreening.ErasureCovariance
+
+@[expose] public section
 
 /-!
 # Placement of a response factor in Jacobson's Clausius relation

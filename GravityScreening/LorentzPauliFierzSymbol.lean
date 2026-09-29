@@ -1,4 +1,7 @@
-import GravityScreening.PauliFierzSymbol
+module
+public import GravityScreening.PauliFierzSymbol
+
+@[expose] public section
 
 /-!
 # Lorentz-signature Ward test for the massless spin-two symbol

@@ -1,5 +1,8 @@
-import GravityScreening.CanonicalEnergy
-import GravityScreening.ClockGravityFactorization
+module
+public import GravityScreening.CanonicalEnergy
+public import GravityScreening.ClockGravityFactorization
+
+@[expose] public section
 
 /-!
 # Direct information-metric route to the Newton response

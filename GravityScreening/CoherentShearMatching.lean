@@ -1,4 +1,7 @@
-import GravityScreening.HorizonShearNormalization
+module
+public import GravityScreening.HorizonShearNormalization
+
+@[expose] public section
 
 /-!
 # Coherent shear matching across the quartic information channel

@@ -1,4 +1,7 @@
-import GravityScreening.ErasureDilation
+module
+public import GravityScreening.ErasureDilation
+
+@[expose] public section
 
 /-!
 # Modular covariance of the fixed-erasure tangent channel

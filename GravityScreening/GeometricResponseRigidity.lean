@@ -1,5 +1,8 @@
-import GravityScreening.HodgeResponseCovariance
-import GravityScreening.TraceFreeResponseUniqueness
+module
+public import GravityScreening.HodgeResponseCovariance
+public import GravityScreening.TraceFreeResponseUniqueness
+
+@[expose] public section
 
 /-! Response rigidity and one-mode calibration on the geometrically generated
 224-dimensional trace-free algebra. Covariance and calibration are explicit

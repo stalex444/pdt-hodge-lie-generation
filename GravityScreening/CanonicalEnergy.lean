@@ -1,4 +1,7 @@
-import GravityScreening.InformationArea
+module
+public import GravityScreening.InformationArea
+
+@[expose] public section
 
 /-!
 # Canonical-energy interpretation of Fisher contraction

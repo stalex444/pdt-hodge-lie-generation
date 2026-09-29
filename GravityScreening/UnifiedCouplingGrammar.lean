@@ -1,4 +1,7 @@
-import GravityScreening.Basic
+module
+public import GravityScreening.Basic
+
+@[expose] public section
 
 /-!
 # A shared determinant grammar for the electromagnetic and gravitational scales

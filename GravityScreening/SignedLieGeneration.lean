@@ -1,5 +1,8 @@
-import Mathlib.Algebra.Lie.Classical
-import Mathlib.Tactic
+module
+public import Mathlib.Algebra.Lie.Classical
+public import Mathlib.Tactic
+
+@[expose] public section
 
 /-! A reusable matrix-unit proof of Lie generation from all signed skew
 directions and one signed symmetric off-diagonal direction. -/
@@ -112,9 +115,9 @@ theorem tracefree_mem_of_singles (L : LieSubalgebra K (Matrix n n K))
     exact (map_sum _ _ _).symm
   have heq : (∑ i, ∑ j, T i j) = M := by
     simp only [T, Finset.sum_sub_distrib, Finset.sum_ite_eq, Finset.mem_univ,
-      if_true, Matrix.sum_sum_single]
+      if_true]
     rw [hd, hM, Matrix.single_zero, sub_zero]
-    rfl
+    exact (Matrix.matrix_eq_sum_single M).symm
   rwa [heq] at hsum
 
 /-- All signed skew directions and one symmetric off-diagonal direction generate

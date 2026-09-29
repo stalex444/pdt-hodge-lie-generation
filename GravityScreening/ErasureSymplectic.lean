@@ -1,4 +1,7 @@
-import GravityScreening.TTGeneralizedCurl
+module
+public import GravityScreening.TTGeneralizedCurl
+
+@[expose] public section
 
 /-!
 # Symplectic and kinetic structure of the full erasure dilation

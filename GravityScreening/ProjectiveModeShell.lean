@@ -1,4 +1,7 @@
-import GravityScreening.ObserverGaugeIntegration
+module
+public import GravityScreening.ObserverGaugeIntegration
+
+@[expose] public section
 
 /-!
 # The projective four-mode shell

@@ -1,7 +1,10 @@
-import Mathlib.Algebra.Lie.Semisimple.Basic
-import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
-import Mathlib.LinearAlgebra.Determinant
-import Mathlib.FieldTheory.IsAlgClosed.Basic
+module
+public import Mathlib.Algebra.Lie.Semisimple.Basic
+public import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
+public import Mathlib.LinearAlgebra.Determinant
+public import Mathlib.FieldTheory.IsAlgClosed.Basic
+
+@[expose] public section
 
 /-!
 # Adjoint invariant-subspace interface and scalar response uniqueness

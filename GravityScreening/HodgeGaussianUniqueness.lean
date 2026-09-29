@@ -1,5 +1,10 @@
-import GravityScreening.GaussianInformationGeometry
-import GravityScreening.ClockHodgeBridge
+module
+public import GravityScreening.GaussianInformationGeometry
+public import GravityScreening.ClockHodgeBridge
+
+@[expose] public section
+
+set_option backward.isDefEq.respectTransparency false
 
 /-!
 # Reverse classification of the doubled Hodge response
@@ -78,12 +83,9 @@ theorem doubledResponse_eq_explicit_of_symmetries
   norm_num [doubledPolarizationQuarterTurn, realifiedChirality,
     Matrix.mul_apply, Matrix.transpose_apply, Fin.sum_univ_succ,
     Matrix.cons_val_two, Matrix.cons_val_three] at hJ00 hJ01 hJ02 hJ03 hJ10 hJ11 hJ12 hJ13 hJ20 hJ21 hJ22 hJ23 hJ30 hJ31 hJ32 hJ33 hC00 hC01 hC02 hC03 hC10 hC11 hC12 hC13 hC20 hC21 hC22 hC23 hC30 hC31 hC32 hC33 hS01 hS02 hS03 hS12 hS13 hS23
-  have hfin3 : (Fin.succ (2 : Fin 3) : Fin 4) = 3 := by decide
-  simp only [hfin3] at hJ00 hJ01 hJ02 hJ03 hJ10 hJ11 hJ12 hJ13 hJ20 hJ21 hJ22 hJ23 hJ30 hJ31 hJ32 hJ33 hC00 hC01 hC02 hC03 hC10 hC11 hC12 hC13 hC20 hC21 hC22 hC23 hC30 hC31 hC32 hC33
   apply Matrix.ext
   simp only [Fin.forall_fin_succ, Fin.forall_fin_zero]
   norm_num [Matrix.cons_val_two, Matrix.cons_val_three]
-  simp only [hfin3]
   norm_num
   repeat' apply And.intro
   all_goals linarith
@@ -141,7 +143,6 @@ theorem realDoubledResponse_unique_of_symmetry_mean_core
     M = realDoubledResponse (lambda4 q) := by
   have hshape := doubledResponse_eq_affineChirality_of_symmetries M hJ hC hself
   have hq0 : q ≠ 0 := by linarith
-  have hfin3 : (Fin.succ (2 : Fin 3) : Fin 4) = 3 := by decide
   have ha : M 0 0 = 1 := by
     rw [hshape] at hmean
     norm_num [Matrix.trace, Fin.sum_univ_succ, realifiedChirality,
@@ -153,7 +154,6 @@ theorem realDoubledResponse_unique_of_symmetry_mean_core
     norm_num [Matrix.mulVec, dotProduct, Fin.sum_univ_succ, realifiedMinus,
       realifiedChirality, Matrix.one_apply, Matrix.cons_val_two,
       Matrix.cons_val_three] at hcore0
-    simp [hfin3] at hcore0
     rw [ha] at hcore0
     unfold lambda4
     field_simp [hq0] at hcore0 ⊢
@@ -163,8 +163,6 @@ theorem realDoubledResponse_unique_of_symmetry_mean_core
   simp only [Fin.forall_fin_succ, Fin.forall_fin_zero]
   norm_num [realDoubledResponse, realifiedChirality, Matrix.one_apply,
     Matrix.cons_val_two, Matrix.cons_val_three]
-  simp only [hfin3]
-  all_goals decide
 
 /-- Consequently the reverse-classified matrix has the exact quartic
 information-geometric fingerprint. -/

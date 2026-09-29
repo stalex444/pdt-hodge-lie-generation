@@ -1,4 +1,7 @@
-import GravityScreening.HorizonShearBridge
+module
+public import GravityScreening.HorizonShearBridge
+
+@[expose] public section
 
 /-!
 # Physical versus canonically normalized horizon shear

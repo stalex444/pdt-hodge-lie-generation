@@ -1,4 +1,7 @@
-import GravityScreening.RindlerClock
+module
+public import GravityScreening.RindlerClock
+
+@[expose] public section
 
 /-!
 # Tolman-redshifted quartic modular clock

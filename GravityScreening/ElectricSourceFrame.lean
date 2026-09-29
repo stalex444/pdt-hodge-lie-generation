@@ -1,4 +1,7 @@
-import GravityScreening.SourcedConstraint
+module
+public import GravityScreening.SourcedConstraint
+
+@[expose] public section
 
 /-!
 # Source-preserving triangular frame for the quartic squeeze

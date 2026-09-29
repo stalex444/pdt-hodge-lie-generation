@@ -1,4 +1,7 @@
-import GravityScreening.QuarticModularAnalyticFlow
+module
+public import GravityScreening.QuarticModularAnalyticFlow
+
+@[expose] public section
 
 /-!
 # Arithmetic independence of the cubic and quartic modular clocks
@@ -48,11 +51,11 @@ theorem integralUnit_pow_ne_ratCast {x : ℝ}
     rw [h0, Rat.cast_zero] at h
     exact (pow_pos (by linarith : (0 : ℝ) < x) n).ne' h
   have hc : IsIntegral ℤ c := by
-    rw [← isIntegral_algebraMap_iff (algebraMap ℚ ℝ).injective,
+    rw [← isIntegral_algebraMap_iff (A := ℚ) (B := ℝ),
       eq_ratCast, ← h]
     exact hi.pow n
   have hc' : IsIntegral ℤ c⁻¹ := by
-    rw [← isIntegral_algebraMap_iff (algebraMap ℚ ℝ).injective,
+    rw [← isIntegral_algebraMap_iff (A := ℚ) (B := ℝ),
       map_inv₀, eq_ratCast, ← h, ← inv_pow]
     exact hi'.pow n
   obtain ⟨m, hm⟩ := IsIntegrallyClosed.isIntegral_iff.mp hc

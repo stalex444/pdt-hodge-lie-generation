@@ -1,4 +1,7 @@
-import GravityScreening.QuarticGraphKMSData
+module
+public import GravityScreening.QuarticGraphKMSData
+
+@[expose] public section
 
 /-!
 # Real-time phase and imaginary-time contraction of the quartic modular flow

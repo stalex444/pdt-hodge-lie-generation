@@ -1,5 +1,8 @@
-import GravityScreening.ObserverRotationGauge
-import GravityScreening.BoundaryMeasureNormalization
+module
+public import GravityScreening.ObserverRotationGauge
+public import GravityScreening.BoundaryMeasureNormalization
+
+@[expose] public section
 
 /-!
 # Integrating a rotation-scalar channel over the observer gauge

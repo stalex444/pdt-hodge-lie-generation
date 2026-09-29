@@ -1,5 +1,8 @@
-import GravityScreening.SignedLieGeneration
-import ResponseClosureCertificate
+module
+public import GravityScreening.SignedLieGeneration
+public import ResponseClosureCertificate
+
+@[expose] public section
 
 /-! Constructive base change of the integral adjoint/Hodge Lie-generation
 certificate. The field hypothesis is precisely that two is nonzero. -/

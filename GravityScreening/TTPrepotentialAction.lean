@@ -1,4 +1,7 @@
-import GravityScreening.ErasureSymplectic
+module
+public import GravityScreening.ErasureSymplectic
+
+@[expose] public section
 
 /-!
 # The full quartic dilation on the TT prepotential action

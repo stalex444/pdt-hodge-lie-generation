@@ -1,6 +1,9 @@
-import GravityScreening.CanonicalPerronHorizonBridge
-import GravityScreening.CoreClockDuality
-import GravityScreening.HorizonCommutingSquare
+module
+public import GravityScreening.CanonicalPerronHorizonBridge
+public import GravityScreening.CoreClockDuality
+public import GravityScreening.HorizonCommutingSquare
+
+@[expose] public section
 
 /-!
 # Perron optical flow and a Raychaudhuri-form identity

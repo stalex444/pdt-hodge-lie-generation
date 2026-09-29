@@ -1,4 +1,7 @@
-import GravityScreening.RhoQModularCompletion
+module
+public import GravityScreening.RhoQModularCompletion
+
+@[expose] public section
 
 /-!
 # Fixed two-pi normalization of the joint modular clock

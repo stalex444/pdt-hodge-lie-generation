@@ -1,7 +1,10 @@
-import GravityScreening.TTPrepotentialAction
-import GravityScreening.ElectricSourceFrame
-import GravityScreening.LorentzPauliFierzSymbol
-import GravityScreening.TTHorizonCode
+module
+public import GravityScreening.TTPrepotentialAction
+public import GravityScreening.ElectricSourceFrame
+public import GravityScreening.LorentzPauliFierzSymbol
+public import GravityScreening.TTHorizonCode
+
+@[expose] public section
 
 /-!
 # Constrained and sourced closure of the quartic TT response

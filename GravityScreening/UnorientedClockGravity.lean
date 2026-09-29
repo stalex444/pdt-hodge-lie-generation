@@ -1,6 +1,9 @@
-import GravityScreening.ClockGravityFactorization
-import GravityScreening.HodgeOrientationGauge
-import GravityScreening.ConservedFlux
+module
+public import GravityScreening.ClockGravityFactorization
+public import GravityScreening.HodgeOrientationGauge
+public import GravityScreening.ConservedFlux
+
+@[expose] public section
 
 /-!
 # The clock-to-gravity bridge without an orientation choice

@@ -1,5 +1,8 @@
-import GravityScreening.PerronOpticalRaychaudhuri
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+module
+public import GravityScreening.PerronOpticalRaychaudhuri
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+
+@[expose] public section
 
 /-!
 # Orthogonal optical realization and finite-cut balance

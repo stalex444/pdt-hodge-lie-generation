@@ -1,4 +1,7 @@
-import GravityScreening.TetrahedralInformationFrame
+module
+public import GravityScreening.TetrahedralInformationFrame
+
+@[expose] public section
 
 /-!
 # Quartic Perron mass versus the normalized tetrahedral record

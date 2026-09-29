@@ -1,7 +1,10 @@
-import GravityScreening.LQGFluxAreaBridge
-import GravityScreening.JacobsonPlacement
-import GravityScreening.RhoQBoostNormalization
-import GravityScreening.UnifiedCouplingGrammar
+module
+public import GravityScreening.LQGFluxAreaBridge
+public import GravityScreening.JacobsonPlacement
+public import GravityScreening.RhoQBoostNormalization
+public import GravityScreening.UnifiedCouplingGrammar
+
+@[expose] public section
 
 /-!
 # Barbero--Immirzi-independent horizon thermodynamics

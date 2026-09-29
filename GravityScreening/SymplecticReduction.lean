@@ -1,4 +1,7 @@
-import GravityScreening.EffectiveGravityClosure
+module
+public import GravityScreening.EffectiveGravityClosure
+
+@[expose] public section
 
 /-!
 # Uniform symplectic reduction over an arbitrary self-adjoint spatial form

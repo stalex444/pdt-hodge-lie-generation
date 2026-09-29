@@ -1,5 +1,8 @@
-import Mathlib
-import ResponseClosureGeometry
+module
+public import Mathlib
+public import ResponseClosureGeometry
+
+@[expose] public section
 
 /-!
 # The fifteen explicit generators span the full orthogonal matrix algebra

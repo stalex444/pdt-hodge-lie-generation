@@ -1,4 +1,7 @@
-import GravityScreening.CoreClockDuality
+module
+public import GravityScreening.CoreClockDuality
+
+@[expose] public section
 
 /-!
 # From the modular core weight to the Hodge response

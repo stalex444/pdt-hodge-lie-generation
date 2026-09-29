@@ -1,5 +1,8 @@
-import GravityScreening.SymplecticReduction
-import GravityScreening.SpinTwoDegreeAudit
+module
+public import GravityScreening.SymplecticReduction
+public import GravityScreening.SpinTwoDegreeAudit
+
+@[expose] public section
 
 /-!
 # Source coupling in the first-order canonical realization

@@ -1,5 +1,8 @@
-import GravityScreening.UnifiedCouplingGrammar
-import Mathlib.Algebra.Lie.Classical
+module
+public import GravityScreening.UnifiedCouplingGrammar
+public import Mathlib.Algebra.Lie.Classical
+
+@[expose] public section
 
 /-!
 # The fifteen generators of the four-dimensional conformal algebra

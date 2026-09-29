@@ -1,14 +1,17 @@
-import ResponseClosureOrthogonalBasis
-import GravityScreening.HodgeLieGeneration
-import GravityScreening.AdjointResponseUniqueness
-import GravityScreening.GeometricResponseRigidity
-import GravityScreening.HodgeModeCalibration
-import GravityScreening.PdtOpticalRepair
-import GravityScreening.TwoSidedTraceFree
-import ResponseClosureGeometry
-import GravityScreening.HorizonEinsteinClosureCapstone
-import GravityScreening.QuantumGalileoPhase
-import GravityScreening.StructuralGravityExponent
+module
+public import ResponseClosureOrthogonalBasis
+public import GravityScreening.HodgeLieGeneration
+public import GravityScreening.AdjointResponseUniqueness
+public import GravityScreening.GeometricResponseRigidity
+public import GravityScreening.HodgeModeCalibration
+public import GravityScreening.PdtOpticalRepair
+public import GravityScreening.TwoSidedTraceFree
+public import ResponseClosureGeometry
+public import GravityScreening.HorizonEinsteinClosureCapstone
+public import GravityScreening.QuantumGalileoPhase
+public import GravityScreening.StructuralGravityExponent
+
+@[expose] public section
 
 /-!
 # PDT horizon-to-Einstein closure

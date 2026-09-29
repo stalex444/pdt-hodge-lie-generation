@@ -1,4 +1,7 @@
-import GravityScreening.JacobsonPlacement
+module
+public import GravityScreening.JacobsonPlacement
+
+@[expose] public section
 
 /-!
 # Conserved global flux in the finite erasure dilation

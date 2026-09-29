@@ -1,4 +1,7 @@
-import GravityScreening.CanonicalEnergy
+module
+public import GravityScreening.CanonicalEnergy
+
+@[expose] public section
 
 /-!
 # Horizon-cut evolution versus coupling renormalization

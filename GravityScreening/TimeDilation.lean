@@ -1,4 +1,7 @@
-import GravityScreening.HorizonConstraint
+module
+public import GravityScreening.HorizonConstraint
+
+@[expose] public section
 
 /-!
 # Clock phase under gravitational time reparametrization

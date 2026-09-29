@@ -1,4 +1,7 @@
-import GravityScreening.ErasureTTBridge
+module
+public import GravityScreening.ErasureTTBridge
+
+@[expose] public section
 
 /-!
 # A norm-preserving two-state code for the TT graviton

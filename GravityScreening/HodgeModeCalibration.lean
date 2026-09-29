@@ -1,4 +1,7 @@
-import GravityScreening.GeometricResponseRigidity
+module
+public import GravityScreening.GeometricResponseRigidity
+
+@[expose] public section
 
 /-!
 # Calibration on the actual local Hodge mode

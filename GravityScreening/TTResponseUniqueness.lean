@@ -1,4 +1,7 @@
-import GravityScreening.TTHorizonSplitter
+module
+public import GravityScreening.TTHorizonSplitter
+
+@[expose] public section
 
 /-!
 # Uniqueness of the passive isotropic TT response

@@ -1,4 +1,7 @@
-import GravityScreening.LQGHorizonThermodynamics
+module
+public import GravityScreening.LQGHorizonThermodynamics
+
+@[expose] public section
 
 /-!
 # The quartic Perron carrier is dynamical, not a static area observable

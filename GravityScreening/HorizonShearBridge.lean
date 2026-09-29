@@ -1,5 +1,8 @@
-import GravityScreening.InformationToGravityChain
-import GravityScreening.TransverseTracelessCount
+module
+public import GravityScreening.InformationToGravityChain
+public import GravityScreening.TransverseTracelessCount
+
+@[expose] public section
 
 /-!
 # Horizon shear and the Newton-normalization ambiguity

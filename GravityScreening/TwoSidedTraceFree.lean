@@ -1,4 +1,7 @@
-import Mathlib.LinearAlgebra.Matrix.Trace
+module
+public import Mathlib.LinearAlgebra.Matrix.Trace
+
+@[expose] public section
 
 /-!
 # The exact trace-free preservation condition for a two-sided response

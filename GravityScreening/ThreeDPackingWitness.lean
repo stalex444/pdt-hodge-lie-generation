@@ -1,4 +1,7 @@
-import GravityScreening.TransverseTracelessCount
+module
+public import GravityScreening.TransverseTracelessCount
+
+@[expose] public section
 
 /-!
 # An explicit three-dimensional plastic-number digit geometry

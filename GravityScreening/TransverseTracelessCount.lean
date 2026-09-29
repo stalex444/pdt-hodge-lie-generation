@@ -1,5 +1,8 @@
-import GravityScreening.FirstOrderSourceAction
-import Mathlib.LinearAlgebra.Dimension.Constructions
+module
+public import GravityScreening.FirstOrderSourceAction
+public import Mathlib.LinearAlgebra.Dimension.Constructions
+
+@[expose] public section
 
 /-!
 # Explicit transverse-traceless degree count

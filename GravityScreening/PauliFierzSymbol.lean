@@ -1,4 +1,7 @@
-import GravityScreening.PauliFierzUniqueness
+module
+public import GravityScreening.PauliFierzUniqueness
+
+@[expose] public section
 
 /-!
 # Four-dimensional symbol test for the massless spin-two operator

@@ -1,4 +1,9 @@
-import GravityScreening.QuarticGraphKMSData
+module
+public import GravityScreening.QuarticGraphKMSData
+
+@[expose] public section
+
+set_option backward.isDefEq.respectTransparency false
 
 /-!
 # Perron--Frobenius data for the cubic graph KMS scale

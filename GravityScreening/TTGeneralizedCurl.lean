@@ -1,4 +1,7 @@
-import GravityScreening.TTHorizonCode
+module
+public import GravityScreening.TTHorizonCode
+
+@[expose] public section
 
 /-!
 # Generalized curl on a transverse-traceless Fourier mode

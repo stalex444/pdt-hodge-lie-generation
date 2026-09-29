@@ -1,4 +1,7 @@
-import Mathlib
+module
+public import Mathlib
+
+@[expose] public section
 
 /-!
 # A minimal algebraic model of the PDT gravity-screening coefficient

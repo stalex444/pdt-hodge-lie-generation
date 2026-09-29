@@ -1,5 +1,8 @@
-import GravityScreening.PerronTetrahedralBridge
-import GravityScreening.InformationArea
+module
+public import GravityScreening.PerronTetrahedralBridge
+public import GravityScreening.InformationArea
+
+@[expose] public section
 
 /-!
 # Radial and shape directions of the positive-measure Fisher cone

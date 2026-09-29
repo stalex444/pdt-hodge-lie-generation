@@ -1,6 +1,9 @@
-import GravityScreening.PerronOpticalRaychaudhuri
-import GravityScreening.ClockToGravityChain
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
+module
+public import GravityScreening.PerronOpticalRaychaudhuri
+public import GravityScreening.ClockToGravityChain
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
+
+@[expose] public section
 
 /-!
 # KMS selection of the optical horizon flow

@@ -1,4 +1,7 @@
-import GravityScreening.DoubledSpinTwoOperator
+module
+public import GravityScreening.DoubledSpinTwoOperator
+
+@[expose] public section
 
 /-!
 # Quadratic action behind the doubled spin-two operator

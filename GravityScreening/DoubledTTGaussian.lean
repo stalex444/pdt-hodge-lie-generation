@@ -1,7 +1,10 @@
-import GravityScreening.FourModeGaussianTrace
-import GravityScreening.DoubledSpinTwoAction
-import GravityScreening.TTConstraintSourceClosure
-import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
+module
+public import GravityScreening.FourModeGaussianTrace
+public import GravityScreening.DoubledSpinTwoAction
+public import GravityScreening.TTConstraintSourceClosure
+public import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
+
+@[expose] public section
 
 /-!
 # Gaussian determinant of the doubled transverse-traceless response

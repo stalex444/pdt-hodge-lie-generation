@@ -1,6 +1,9 @@
-import GravityScreening.CubicGraphKMSData
-import GravityScreening.RhoQModularIndependence
-import GravityScreening.UnifiedCouplingGrammar
+module
+public import GravityScreening.CubicGraphKMSData
+public import GravityScreening.RhoQModularIndependence
+public import GravityScreening.UnifiedCouplingGrammar
+
+@[expose] public section
 
 /-!
 # The joint cubic--quartic modular flow

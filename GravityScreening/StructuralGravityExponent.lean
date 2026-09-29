@@ -1,6 +1,9 @@
-import GravityScreening.PdtStabilizer
-import GravityScreening.ConformalGeneratorCount
-import GravityScreening.ConformalResponseAlgebra
+module
+public import GravityScreening.PdtStabilizer
+public import GravityScreening.ConformalGeneratorCount
+public import GravityScreening.ConformalResponseAlgebra
+
+@[expose] public section
 
 /-!
 # Structural derivation of the gravitational exponent

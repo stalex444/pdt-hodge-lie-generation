@@ -108,8 +108,10 @@ not present the fixed local-Hodge generation calculation.
   ordinary simple-adjoint/Schur interface; the direct theorem does not
   depend on it.
 
-The component files compile with Lean 4.31 and use only `propext`,
-`Classical.choice` and `Quot.sound`. The direct response and covariance
+The original component verification used Lean 4.31. The September 29
+compatibility port compiles with Lean 4.35.0-rc2 and matching Mathlib; the
+selected generation-and-rigidity theorem still uses only `propext`,
+`Classical.choice` and `Quot.sound`. The earlier direct response and covariance
 proofs also received an independent AI source review and recompilation.
 These checks establish the displayed mathematical implications. The
 standard centroid/Schur principle is not claimed as a newly discovered

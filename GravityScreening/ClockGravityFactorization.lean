@@ -1,4 +1,7 @@
-import GravityScreening.ClockToGravityChain
+module
+public import GravityScreening.ClockToGravityChain
+
+@[expose] public section
 
 /-!
 # The clock contraction and the gravitational canonical squeeze
